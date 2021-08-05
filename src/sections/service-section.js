@@ -91,14 +91,16 @@ export default function ServiceSection() {
           </Grid>
         </Box>
       </Container>
-      <ModalVideo
-        channel="youtube"
-        isOpen={videoOpen}
-        videoId="Hq-CKmNPyUo"
-        onClose={() => {
-          setVideoOpen(false);
-        }}
-      />
+      {process.window && (
+        <ModalVideo
+          channel="youtube"
+          isOpen={videoOpen}
+          videoId="Hq-CKmNPyUo"
+          onClose={() => {
+            setVideoOpen(false);
+          }}
+        />
+      )}
     </section>
   );
 }
