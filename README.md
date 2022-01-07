@@ -1,1 +1,1 @@
-A simple landing page for a random site using Nextjs technology
+A simple landing page for a website using Next js technology.
